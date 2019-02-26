@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="loading"/>
+
+        <Button
+            android:id="@+id/btn_no_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no_content"/>
+
+        <Button
+            android:id="@+id/btn_no_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no_net"/>
+
+        <Button
+            android:id="@+id/btn_load_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="load_error"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <include layout="@layout/loading" />
+
+        <include layout="@layout/view_stub_holder" />
+    </LinearLayout>
+
+
+
+</FrameLayout>
